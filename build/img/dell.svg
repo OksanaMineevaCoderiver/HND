@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53 37">
+    <defs>
+        <path id="a" d="M0 0h53v37H0z"/>
+    </defs>
+    <clipPath id="b">
+        <use xlink:href="#a" overflow="visible"/>
+    </clipPath>
+    <g clip-path="url(#b)">
+        <image width="1541" height="1087" xlink:href="C9147CF6.png" transform="scale(.0344 .03404)" overflow="visible"/>
+    </g>
+</svg>

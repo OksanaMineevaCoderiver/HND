@@ -1,0 +1,36 @@
+{% macro icon(i) %}
+<svg class="icon icon-{{i}}"><use xlink:href="img/sprite.svg#icon-{{i}}"></use></svg>
+{% endmacro %}
+
+{% macro solution(config) %}
+<div class="card-solution">
+	<div class="card-solution__img" style="background-image: url(../img/{{config.img}})"></div>
+	<div class="card-solution__heading">
+		<h3 class="h3">{{config.title}}</h3>
+		<div class="h3-subheading">{{config.subtitle}}</div>
+	</div>
+	<div class="card-solution__btn">
+		<button class="btn btn-solution">Discover more</button>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro advantage(config) %}
+<div class="advantage">
+	<div class="advantage__img" style="background-image: url(img/{{config.img}})"></div>
+	<div class="advantage__body">
+		<div class="advantage__title">{{config.title}}</div>
+		<div class="advantage__descr">{{config.descr}}</div>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro customer(config) %}
+<div class="customer-opinion">
+	<div class="customer-opinion__img" style="background-image: url(img/{{config.img}})"></div>
+	<div class="customer-opinion__text">{{config.text}}</div>
+	<span></span>
+	<div class="customer-opinion__person">{{config.person}}</div>
+	<a href="{{config.link}}">{{config.link}}</a>
+</div>
+{% endmacro %}

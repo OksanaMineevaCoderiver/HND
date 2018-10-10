@@ -1,0 +1,61 @@
+.introduction
+	max-width: 1590px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	align-items: stretch
+	&__image
+		width: 50%
+		height: 600px
+		background-size: cover
+		position: relative
+		+r(1300)
+			background-size: 100% 100%
+			height: 500px
+		+r(900)
+			height: 350px
+		+r(580)
+			display: none
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: -2px
+			height: 100%
+			background-image: url(../img/mask_1.png)
+			background-size: auto 100%
+			width: 250px
+			background-repeat: no-repeat
+	&__content
+		margin-top: 195px
+		margin-left: 98px
+		width: 45%
+		margin-right: 40px
+		+r(1450)
+			margin-top: 90px
+		+r(900)
+			margin-top: 40px
+			margin-left: 40px
+		+r(580)
+			width: 90%
+			text-align: center
+			margin-left: 20px
+			margin-right: 20px
+			margin-top: 20px
+	&__text
+		margin-top: 47px
+		margin-right: -40px
+		color: #ffffff
+		+fAL
+		font-size: 23px
+		font-weight: normal
+		line-height: 1.3278
+		letter-spacing: -0.1px
+		+r(900)
+			font-size: 18px
+			margin-top: 15px
+		+r(580)
+			margin-right: 0
+			margin-bottom: 20px
+		+r(430)
+			font-size: 16px

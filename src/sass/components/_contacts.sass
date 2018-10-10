@@ -1,0 +1,92 @@
+.contacts
+	max-width: 1590px
+	margin: 0 auto
+	display: flex
+	justify-content: space-between
+	+r(890)
+		flex-wrap: wrap
+		flex-direction: row-reverse
+	&__image
+		width: 48.5%
+		height: 610px
+		background-size: 150%
+		background-position: 73% 17% 
+		position: relative
+		+r(1300)
+			background-size: 100% 100%
+			height: 500px
+		+r(900)
+			height: 350px
+		+r(890)
+			width: 60%
+			order: 1
+		+r(580)
+			width: 80%
+
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: -2px
+			height: 100%
+			background-image: url(../img/mask_2.png)
+			background-size: auto 100% 
+			width: 250px
+			background-repeat: no-repeat
+	&__content
+		padding-top: 92px
+		padding-left: 102px
+		width: 46%
+		margin-right: 40px
+		+r(1300)
+			padding-top: 40px
+			padding-left: 40px
+		+r(890)
+			order: 2
+			width: 100%
+		+r(420)
+			padding-left: 15px
+	&__text
+		margin-top: 32px
+		margin-bottom: 42px
+		margin-left: -6px
+		color: #ffffff
+		+fAL
+		font-size: 23px
+		font-weight: normal
+		line-height: 1.3278
+		+r(1070)
+			margin-bottom: 20px
+			margin-top: 20px
+		+r(420)
+			margin-left: 0
+	&__btn
+		margin-bottom: 111px
+		+r(1300)
+			margin-bottom: 25px
+
+.contact-us
+	display: flex
+	margin-left: -6px
+	+r(420)
+			margin-left: 0
+	&__left
+		margin-right: 20px
+		+r(460)
+			margin-right: 10px
+			margin-bottom: 20px
+
+	&__title
+		color: #ffffff
+		+fAR
+		font-size: 23px
+		line-height: 1.36956522
+		+r(460)
+			font-size: 16px
+	&__item
+		color: #90c53c
+		+fAR
+		font-size: 23px
+		line-height: 1.36956522
+		+r(460)
+			font-size: 16px

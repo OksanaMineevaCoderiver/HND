@@ -1,0 +1,49 @@
+.certifications
+	max-width: 1240px
+	margin: 0 auto
+	padding-bottom: 147px
+	+r(1240)
+		margin-right: 15px
+		margin-left: 15px
+	+r(1000)
+		padding-bottom: 50px
+	&__heading
+		padding-top: 139px
+		margin-bottom: 80px
+		+r(1000)
+			padding-top: 50px
+	&__block
+		display: flex
+		justify-content: space-around
+		align-items: stretch
+		+r(1180)
+			flex-wrap: wrap
+		div
+			display: flex
+			align-items: center
+			position: relative
+			+r(1180)
+				padding-left: 70px
+				padding-right: 70px
+				margin-bottom: 40px
+			&:before
+				content: ""
+				position: absolute
+				height: 85px
+				width: 2px
+				background-color: rgb(199,226,157)
+				top: 0
+				left: -65px
+				+r(1180)
+					display: none
+			&:last-child
+				&:after
+					content: ""
+					position: absolute
+					height: 85px
+					width: 2px
+					background-color: rgb(199,226,157)
+					top: 0
+					right: -65px
+					+r(1180)
+						display: none

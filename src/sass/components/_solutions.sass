@@ -1,0 +1,109 @@
+.solutions
+	max-width: 1250px
+	margin: 0 auto
+	padding-top: 111px
+	padding-bottom: 122px
+	+r(880)
+		padding-top: 50px
+	+r(440)
+		padding-top: 20px
+		padding-bottom: 20px
+	&__info
+		max-width: 895px
+		margin: 0 auto
+		color: #181818
+		+fAR
+		font-size: 23px
+		font-weight: normal
+		line-height: 1.6
+		text-align: center
+		margin-bottom: 130px
+		letter-spacing: -0.05px
+		+r(880)
+			margin-left: 50px
+			margin-right: 50px
+			font-size: 20px
+			margin-bottom: 50px
+		+r(440)
+			margin-right: 20px
+			margin-left: 20px
+	&__heading
+		margin-bottom: 90px
+		letter-spacing: -0.15px
+		+r(440)
+			margin-bottom: 50px
+
+	&__cards
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		+r(850)
+			margin-left: 10px
+			margin-right: 10px
+
+.card-solution
+	padding-bottom: 31px
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.15)
+	border-radius: 12px
+	border: 1px solid rgba(24, 24, 24, 0.16)
+	background-color: #ffffff
+	max-width: 382px
+	margin-bottom: 64px
+	margin-right: 50px
+	overflow: hidden
+	+r(1265)
+		&:nth-child(3)
+			margin-right: 50px
+			margin-left: 50px
+		&:nth-child(2)
+			margin-right: 0
+	+r(850)
+		&:nth-child(2), &:nth-child(3), &:nth-child(4), &:last-child, &:first-child
+			margin-right: 10px
+			margin-left: 10px
+	&:nth-child(3), &:last-child
+		margin-right: 0
+	&:first-child &__img
+		background-size: 150%
+		background-position: 75% 50%
+	&:nth-child(2) &__img
+		background-size: 120%
+		background-position: 50% 60%
+	&:nth-child(3) &__img
+		background-size: 130%
+		background-position: 60% 45%
+	&:nth-child(4)
+		background-size: 100%
+		background-position: center
+	&:nth-child(5)
+		background-size: 100%
+		background-position: center
+	&__img
+		height: 274px
+		background-repeat: no-repeat
+		margin-bottom: 54px
+		position: relative
+		+r(400)
+			height: 200px
+			margin-bottom: 20px
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			bottom: -2px
+			width: 100%
+			height: 130px
+			background-image: url(../img/mask_solution.png)
+			background-size: 100% 100%
+			background-repeat: no-repeat
+	&__heading
+		padding-left: 32px
+		padding-right: 32px
+		min-height: 120px
+		margin-bottom: 38px
+		+r(400)
+			margin-bottom: 20px
+
+	&__btn
+		text-align: center
+		

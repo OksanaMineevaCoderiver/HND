@@ -1,0 +1,55 @@
+<header class="l-header">
+	<div class="header">
+		<div class="header__small-menu">
+			<div class="small-menu">
+				<button class="small-menu__close js-menu-close"></button>
+				<ul class="small-menu__list">
+						<li class="small-menu__item"><a class="small-menu__link" href="#">Home</a></li>
+						<li data-small-drop-down="1" class="small-menu__item-menu small-menu__item js-small-drop-down"><a class="small-menu__link" href="#">Solutions</a>
+							<ul data-small-drop-down="1" class="small-menu__item-drop">
+								<li><a href="#">Modern Workspace</a></li>
+								<li><a href="#">Security & Compliancy</a></li>
+								<li><a href="#">Business Continuity</a></li>
+								<li><a href="#">Business Agility</a></li>
+								<li><a href="#">Business Insights</a></li>
+							</ul>
+						</li>
+						<li class="small-menu__item"><a class="small-menu__link" href="#">Services</a></li>
+						<li class="small-menu__item"><a class="small-menu__link" href="#">About Us</a></li>
+						<li class="small-menu__item"><a class="small-menu__link" href="#">Contact</a></li>
+						<li class="small-menu__item"><a class="small-menu__link" href="#">Webshop</a></li>
+						<li class="small-menu__item"><a class="small-menu__link" href="#">Servicedesk</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="header__left">
+			<div class="logo">
+				{{mixins.icon('logo')}}
+				<span>Success within reach</span>
+			</div>
+		</div>
+		<div class="header__right">
+			<button class="btn-menu js-menu">{{mixins.icon('menu')}}</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item is-active"><a class="nav__link" href="#">Home</a></li>
+					<li data-drop-down="1" class="nav__item-menu nav__item js-drop-down"><a class="nav__link" href="#">Solutions</a>
+						<ul data-drop-down="1" class="nav__item-drop">
+							<li><a href="#">Modern Workspace</a></li>
+							<li><a href="#">Security & Compliancy</a></li>
+							<li><a href="#">Business Continuity</a></li>
+							<li><a href="#">Business Agility</a></li>
+							<li><a href="#">Business Insights</a></li>
+						</ul>
+					</li>
+					<li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">About Us</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Webshop</a></li>
+					<li class="nav__item"><a class="nav__link" href="#">Servicedesk</a></li>
+				</ul>
+			</nav>
+			<button class="btn btn_icon-phone">{{mixins.icon('phone')}}<span>+45 7022 9029</span></button>
+		</div>
+	</div>
+</header>
